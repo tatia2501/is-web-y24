@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background: #ffffff;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.icon_img{
+    height: 50px;
+    width: auto;
+}
+
+input{
+    height: 40px;
+    padding: 4px 10px;
+    font-size: 20px;
+    border-color: #f7a0ff;
+}
+
+button{
+    height: 40px;
+    width: 40px;
+    border-color: #F7A0FF;
+    background: #ffffff;
+}
+
+.search_img{
+    height: 30px;
+    width: auto;
+}
+
