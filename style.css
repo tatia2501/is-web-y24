@@ -24,7 +24,7 @@ input{
 button{
     height: 40px;
     width: 40px;
-    border-color: #F7A0FF;
+    border-color: #f7a0ff;
     background: #ffffff;
 }
 
@@ -33,3 +33,20 @@ button{
     width: auto;
 }
 
+.nav_bar {
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border-top: 1px solid #f7a0ff;
+    border-bottom: 1px solid #f7a0ff;
+    margin: 0;
+    padding: 5px 5px;
+}
+
+.nav_bar a{
+    color: #f7a0ff;
+    font-size: large;
+    text-transform: uppercase;
+    font-family: "Calisto MT", serif;
+    padding: 10px 10px;
+}
