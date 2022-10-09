@@ -78,3 +78,31 @@ h2 {
 h3 {
     font-family: "Calisto MT", serif;
 }
+
+.sale {
+    position: relative;
+    width: 800px;
+    margin: 10px;
+    padding: 0;
+}
+
+.sale_text {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    font-family: "Calisto MT", serif;
+    font-size: x-large;
+    color: #000000;
+}
+
+.sales_img{
+    height: 400px;
+    width: auto;
+    align-items: center;
+    box-shadow: 0 0 15px 5px beige;
+}
+
+.sales_list {
+    display: flex;
+    list-style: none;
+}
