@@ -23,7 +23,7 @@ input{
     border-color: #f7a0ff;
 }
 
-button{
+.header button{
     height: 40px;
     width: 40px;
     border-color: #f7a0ff;
@@ -55,7 +55,7 @@ button{
 }
 
 .quotes {
-    background: #ffeedb;
+    background: #fff6ec;
 }
 
 .quote_img {
@@ -105,4 +105,81 @@ h3 {
 .sales_list {
     display: flex;
     list-style: none;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 330px;
+    width: 500px;
+    margin: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.container .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    width: 250px;
+}
+
+.container .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #000000;
+    float: left;
+}
+
+.container .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: #a2a2a2;
+    float: left;
+}
+.container .details button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 2px 3px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+}
+
+.books_list {
+    display: flex;
+    list-style: none;
+}
+
+.bestsellers{
+    background: #f1ffe1
+}
+.news{
+    background: #e3f8ff
+}
+.kids{
+    background: #fff6ec
+}
+footer {
+    background: #f7a0ff
 }
