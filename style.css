@@ -12,6 +12,8 @@
 .icon_img{
     height: 50px;
     width: auto;
+    margin: 0;
+    padding: 2px 2px;
 }
 
 input{
@@ -48,5 +50,31 @@ button{
     font-size: large;
     text-transform: uppercase;
     font-family: "Calisto MT", serif;
+    margin: 0;
     padding: 10px 10px;
+}
+
+.quotes {
+    background: #ffeedb;
+}
+
+.quote_img {
+    width: 500px;
+    height: auto;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Brush Script MT", cursive;
+}
+
+h2 {
+    font-family: "Calisto MT", serif;
+}
+
+h3 {
+    font-family: "Calisto MT", serif;
 }
