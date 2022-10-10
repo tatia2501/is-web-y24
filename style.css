@@ -28,11 +28,15 @@ input{
     width: 40px;
     border-color: #f7a0ff;
     background: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 .search_img{
     height: 30px;
     width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_bar {
@@ -94,10 +98,12 @@ h1 {
 
 h2 {
     font-family: "Calisto MT", serif;
+    font-size: x-large;
 }
 
 h3 {
     font-family: "Calisto MT", serif;
+    font-size: larger;
 }
 
 .sale {
@@ -119,6 +125,8 @@ h3 {
     height: 400px;
     width: auto;
     align-items: center;
+    margin: 0;
+    padding: 0;
     filter: drop-shadow(0 0 15px beige);
 }
 
@@ -139,11 +147,12 @@ h3 {
     align-items: center;
     height: 330px;
     width: 250px;
+    margin: 0;
+    padding: 0;
 }
 
 .container .details {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 330px;
     width: 250px;
@@ -157,28 +166,42 @@ h3 {
     font-size: 1.5em;
     line-height: 1em;
     color: #000000;
-    float: left;
+    font-family: Arial, serif;
+}
+
+.container .details h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: left;
+    color: #696969;
+    font-family: Arial, cursive;
 }
 
 .container .details h3 {
     margin: 0;
     padding: 0;
     font-size: 1.5em;
+    line-height: 1em;
     color: #a2a2a2;
     float: left;
+    font-family: Arial, serif;
 }
+
 .container .details button {
     background: #000000;
     color: #ffffff;
     border: none;
     outline: none;
     padding: 2px 3px;
-    margin-top: 5px;
+    margin: 10px;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
     border-radius: 40px;
     float: right;
+    font-family: Arial, monospace;
 }
 
 .books_list {
@@ -187,18 +210,31 @@ h3 {
 }
 
 .bestsellers{
-    background: #f1ffe1
+    background: #f1ffe1;
 }
 
 .news{
-    background: #e3f8ff
+    background: #e3f8ff;
 }
 
 .kids{
-    background: #fff6ec
+    background: #fff6ec;
 }
 
 footer {
-    background: #f7a0ff;
+    background: #f9bdff;
     font-family: "Calisto MT", serif;
+    text-align: center;
+}
+
+footer a {
+    font-size: medium;
+    line-height: normal;
+    font-weight: 400;
+    color: #000000;
+    text-transform: none;
+}
+
+footer h4 {
+    text-decoration: line-through;
 }
