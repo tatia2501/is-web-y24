@@ -79,7 +79,7 @@ input{
 }
 
 .quotes_img{
-    width: 500px;
+    width: 95%;
     height: auto;
     margin: 0;
     padding: 10px 10px;
@@ -122,8 +122,8 @@ h3 {
 }
 
 .sales_img{
-    height: 400px;
-    width: auto;
+    width: 95%;
+    height: auto;
     align-items: center;
     margin: 0;
     padding: 0;
