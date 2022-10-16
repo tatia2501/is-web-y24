@@ -9,14 +9,14 @@
     width: 100%;
 }
 
-.icon_img{
+.header .icon_img{
     height: 50px;
     width: auto;
     margin: 0;
     padding: 2px 2px;
 }
 
-input{
+.header input{
     height: 40px;
     padding: 4px 10px;
     font-size: 20px;
@@ -32,7 +32,7 @@ input{
     padding: 0;
 }
 
-.search_img{
+.header #search_img{
     height: 30px;
     width: auto;
     margin: 0;
@@ -43,8 +43,8 @@ input{
     width: 100%;
     text-align: left;
     background-color: #ffffff;
-    border-top: 1px solid #f7a0ff;
-    border-bottom: 1px solid #f7a0ff;
+    border-top: 1px dotted #f7a0ff;
+    border-bottom: 1px dotted #f7a0ff;
     margin: 0;
     padding: 5px 5px;
 }
@@ -53,6 +53,7 @@ input{
     color: #f7a0ff;
     font-size: large;
     text-transform: uppercase;
+    text-decoration: none;
     font-family: "Calisto MT", serif;
     margin: 0;
     padding: 10px 10px;
@@ -62,13 +63,13 @@ input{
     background: #fff6ec;
 }
 
-.quote {
+.quotes .quote {
     position: relative;
     margin: 0;
     padding: 0;
 }
 
-.quote_text {
+.quotes .quote_text {
     position: absolute;
     top: 25%;
     left: 10%;
@@ -78,7 +79,7 @@ input{
     color: #000000;
 }
 
-.quotes_img{
+.quotes .quotes_img{
     width: 95%;
     height: auto;
     margin: 0;
@@ -90,20 +91,18 @@ input{
     list-style: none;
 }
 
-h1 {
+main h1{
+    color: #000000;
     text-align: center;
     font-size: xx-large;
     font-family: "Brush Script MT", cursive;
 }
 
-h2 {
+main h2 a{
+    color: #000000;
     font-family: "Calisto MT", serif;
     font-size: x-large;
-}
-
-h3 {
-    font-family: "Calisto MT", serif;
-    font-size: larger;
+    text-decoration: none;
 }
 
 .sale {
@@ -112,22 +111,29 @@ h3 {
     padding: 0;
 }
 
-.sale_text {
+.sale .sale_text {
     position: absolute;
     bottom: 20%;
     left: 10%;
-    font-family: "Calisto MT", serif;
+    font-family: "Calisto MT", sans-serif;
     font-size: x-large;
-    color: #000000;
+    padding: 8px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(250, 250, 250, 0.5);
 }
 
-.sales_img{
+.sale .sales_img{
     width: 95%;
     height: auto;
     align-items: center;
     margin: 0;
     padding: 0;
     filter: drop-shadow(0 0 15px beige);
+}
+
+.books_list {
+    display: flex;
+    list-style: none;
 }
 
 .container {
@@ -160,16 +166,17 @@ h3 {
     padding: 20px;
 }
 
-.container .details h2{
+.container .details h1{
     margin: 0;
     padding: 0;
     font-size: 1.5em;
     line-height: 1em;
     color: #000000;
     font-family: Arial, serif;
+    text-align: left;
 }
 
-.container .details h4 {
+.container .details h2 {
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -194,19 +201,14 @@ h3 {
     color: #ffffff;
     border: none;
     outline: none;
-    padding: 2px 3px;
-    margin: 10px;
+    padding: 2px 5px;
+    margin: 5px 10px;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
     border-radius: 40px;
     float: right;
     font-family: Arial, monospace;
-}
-
-.books_list {
-    display: flex;
-    list-style: none;
 }
 
 .bestsellers{
@@ -227,14 +229,31 @@ footer {
     text-align: center;
 }
 
+footer h1 {
+    font-size: larger;
+}
+
 footer a {
     font-size: medium;
     line-height: normal;
     font-weight: 400;
     color: #000000;
     text-transform: none;
+    text-decoration: none;
 }
 
-footer h4 {
+footer #line-through {
     text-decoration: line-through;
+    font-size: medium;
+}
+
+footer #underline {
+    text-decoration: underline;
+    font-size: medium;
+}
+
+footer #overline {
+    text-decoration: overline dotted;
+    font-size: medium;
+    text-indent: 10px;
 }
