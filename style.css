@@ -59,26 +59,20 @@
     padding: 10px 10px;
 }
 
-.quotes {
-    background: #fff6ec;
-    width: 51%;
-    height: 500px;
+.kokos {
+    width: 48%;
     margin: 0;
     padding: 0;
     display: inline-block;
 }
 
-.kokos {
-    width: 48%;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+.kokos_2 {
+    height: 70%;
 }
 
 .kokos #kokos_img {
     width: 100%;
-    height: 500px;
+    height: 100%;
     margin: 0;
     padding: 0;
     opacity: 0.9;
@@ -86,8 +80,9 @@
 
 .kokos #kokos_text {
     position: absolute;
-    bottom: 27%;
+    top: 70%;
     right: 3%;
+    left: 60%;
     font-family: "Calisto MT", sans-serif;
     font-size: x-large;
     padding: 8px;
@@ -95,10 +90,17 @@
     background-color: rgba(250, 250, 250, 0.8);
 }
 
-.quotes .quote {
-    position: relative;
+.quotes {
+    background: #fff6ec;
+    width: 51%;
     margin: 0;
     padding: 0;
+    display: inline-block;
+}
+
+.quotes .quote {
+    position: relative;
+    height: 70%;
 }
 
 .quotes .quotes_img{
@@ -110,17 +112,12 @@
 
 .quotes .quote_text {
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 35%;
+    left: 12%;
     right: 25%;
     font-family: "Calisto MT", serif;
-    font-size: larger;
+    font-size: x-large;
     color: #000000;
-}
-
-.pic_list {
-    display: flex;
-    list-style: none;
 }
 
 main h1{
@@ -135,6 +132,11 @@ main h2 a{
     font-family: "Calisto MT", serif;
     font-size: x-large;
     text-decoration: none;
+}
+
+.pic_list {
+    display: flex;
+    list-style: none;
 }
 
 .sale {
