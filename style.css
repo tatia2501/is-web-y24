@@ -1,6 +1,7 @@
-.header {
+header {
     display: flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     background: #ffffff;
     height: 80px;
@@ -9,28 +10,28 @@
     width: 100%;
 }
 
-.header .icon_img{
+header .icon_img{
     height: 50px;
     width: auto;
     margin: 0;
-    padding: 2px 2px;
+    padding: 2px;
 }
 
-.header .logo_img{
+header .logo_img{
     height: 70px;
     width: auto;
     margin: 0;
-    padding: 2px 2px;
+    padding: 2px;
 }
 
-.header input{
+header input{
     height: 40px;
     padding: 4px 10px;
     font-size: 20px;
     border-color: #910c6f;
 }
 
-.header button{
+header button{
     height: 40px;
     width: 40px;
     border-color: #910c6f;
@@ -39,7 +40,7 @@
     padding: 0;
 }
 
-.header #search_img{
+header #search_img{
     height: 30px;
     width: auto;
     margin: 0;
@@ -48,7 +49,7 @@
 
 .nav_bar {
     width: 100%;
-    text-align: left;
+    text-align: center;
     background-color: #ffffff;
     border-top: 1px dotted #910c6f;
     border-bottom: 1px dotted #910c6f;
@@ -98,11 +99,12 @@
 }
 
 .quotes {
-    background: #fff6ec;
-    width: 51%;
+    background: #fdecf9;
+    width: 48.5%;
     margin: 0;
     padding: 0;
     display: inline-block;
+    border: 6px dotted #910c6f;
 }
 
 .quotes .quote {
@@ -139,6 +141,7 @@ main h2 a{
     font-family: "Calisto MT", serif;
     font-size: x-large;
     text-decoration: none;
+    margin: 10px;
 }
 
 .pic_list {
@@ -261,7 +264,7 @@ main h2 a{
 }
 
 .kids{
-    background: #fff6ec;
+    background: #f1ffe1;
 }
 
 footer {
@@ -274,13 +277,21 @@ footer h1 {
     font-size: larger;
 }
 
-footer a {
+footer .contact{
     font-size: medium;
     line-height: normal;
     font-weight: 400;
     color: #000000;
     text-transform: none;
     text-decoration: none;
+}
+
+footer .contact_img{
+    height: 50px;
+    width: auto;
+    margin: 3px;
+    padding: 2px;
+    display: inline-block;
 }
 
 footer #line-through {
