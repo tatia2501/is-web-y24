@@ -16,17 +16,24 @@
     padding: 2px 2px;
 }
 
+.header .logo_img{
+    height: 70px;
+    width: auto;
+    margin: 0;
+    padding: 2px 2px;
+}
+
 .header input{
     height: 40px;
     padding: 4px 10px;
     font-size: 20px;
-    border-color: #f7a0ff;
+    border-color: #910c6f;
 }
 
 .header button{
     height: 40px;
     width: 40px;
-    border-color: #f7a0ff;
+    border-color: #910c6f;
     background: #ffffff;
     margin: 0;
     padding: 0;
@@ -43,14 +50,14 @@
     width: 100%;
     text-align: left;
     background-color: #ffffff;
-    border-top: 1px dotted #f7a0ff;
-    border-bottom: 1px dotted #f7a0ff;
+    border-top: 1px dotted #910c6f;
+    border-bottom: 1px dotted #910c6f;
     margin: 10px 0;
     padding: 5px 5px;
 }
 
 .nav_bar a{
-    color: #f7a0ff;
+    color: #910c6f;
     font-size: large;
     text-transform: uppercase;
     text-decoration: none;
