@@ -302,6 +302,7 @@ footer #line-through {
 footer #underline {
     text-decoration: underline;
     font-size: medium;
+    font-style: italic;
 }
 
 footer #overline {
