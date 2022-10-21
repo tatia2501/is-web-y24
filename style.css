@@ -124,7 +124,7 @@ header #search_img{
     top: 35%;
     left: 12%;
     right: 25%;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Balsamiq Sans', cursive;
     font-size: x-large;
     color: #000000;
 }
@@ -133,7 +133,7 @@ main h1{
     color: #000000;
     text-align: center;
     font-size: xx-large;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 main h2 a{
