@@ -70,7 +70,7 @@ header #search_img{
     padding: 10px;
 }
 
-.hello {
+.welcome {
     width: 100%;
     position: relative;
     display: flex;
@@ -280,20 +280,44 @@ footer .contact_img{
     display: inline-block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .quotes {
         width: 90%;
         margin: 0.1%;
     }
     .quote_text {
-        font-size: 20px;
+        font-size: 16px;
     }
     .kokos {
         width: 90%;
         margin: 0.1%;
     }
     #kokos_text {
-        font-size: 17px;
+        font-size: 15px;
+    }
+    .sale{
+        width: 90%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 600px)  and (max-width: 800px) {
+    .quotes {
+        width: 90%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 23px;
+    }
+    .kokos {
+        width: 90%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 20px;
     }
     .sale{
         width: 90%;
