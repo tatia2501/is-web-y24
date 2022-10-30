@@ -13,8 +13,10 @@
 <body>
     <header class="header">
         <img class="logo_img" src="Pictures/Icons/Logo.png" alt="logo">
-        <label for="site-search"></label><input type="search" id="site-search" name="q">
-        <button><img id="search_img" src="Pictures/Icons/Search.png" alt="search"></button>
+        <div class="search_line">
+            <input class="input" type="text" value="" placeholder="поиск">
+            <button><img id="search_img" src="Pictures/Icons/Search.png" alt="search"></button>
+        </div>
         <a href="#"><img class="icon_img" src="Pictures/Icons/Men.png" alt="account"></a>
         <a href="#"><img class="icon_img" src="Pictures/Icons/Heart.png" alt="favourites"></a>
         <a href="#"><img class="icon_img" src="Pictures/Icons/Basket.png" alt="basket"></a>
@@ -27,43 +29,29 @@
             <a href="#">Акции</a>
             <a href="#">F.A.Q.</a>
         </nav>
-        <div class="quotes">
-            <div class="quote">
-                <h1>Цитата дня</h1>
+        <section class="hello">
+            <div class="quotes">
                 <img class="quotes_img" src="Pictures/Dialog.png" alt="Цитата 1">
                 <div class="quote_text">
-                    <span><q>Хорошая книга подобна айсбергу, семь восьмых которого скрыто под водой.</q><br><cite>Э. Хэмингуэй</cite></span>
+                    <q>Хорошая книга подобна айсбергу, семь восьмых которого скрыто под водой.</q><br>
+                    <cite>Э. Хэмингуэй</cite>
                 </div>
             </div>
-        </div>
-        <div class="kokos">
-            <div class="kokos_2">
+            <div class="kokos">
                 <img id="kokos_img" src="Pictures/Kokos.jpg" alt="Кокос">
-                <div id="kokos_text">
-                    <span>Кот Кокос приветсвует Вас и желает хороших покупок!</span>
-                </div>
+                <div id="kokos_text">Кот Кокос приветсвует Вас и желает хороших покупок!</div>
             </div>
-        </div>
-        <section>
-            <h1>Акции</h1>
-            <ul class="pic_list">
-                <li>
-                    <a href="#"><div class="sale">
-                        <img class="sales_img" src="Pictures/Sales/Blue 1.jpg" alt="Акция 1">
-                        <div class="sale_text">
-                            <span>Скидка 20% на чек от 1000р</span>
-                        </div>
-                    </div></a>
-                </li>
-                <li>
-                    <a href="#"><div class="sale">
-                        <img class="sales_img" src="Pictures/Sales/Green 1.jpg" alt="Акция 2">
-                        <div class="sale_text">
-                            <span>Скидка 15% при оплате на сайте</span>
-                        </div>
-                    </div></a>
-                </li>
-            </ul>
+        </section>
+        <h1>Акции</h1>
+        <section class="sales">
+            <div class="sale">
+                <a href="#"><img class="sales_img" src="Pictures/Sales/Blue 1.jpg" alt="Акция 1"></a>
+                <div class="sale_text">Скидка 20% на чек от 1000р</div>
+            </div>
+            <div class="sale">
+                <a href="#"><img class="sales_img" src="Pictures/Sales/Green 1.jpg" alt="Акция 2"></a>
+                <div class="sale_text">Скидка 15% при оплате на сайте</div>
+            </div>
         </section>
         <h1>Подборки</h1>
         <section class="bestsellers">
@@ -204,9 +192,6 @@
             <a class="contact" href="mailto:kokos@mail.ru">kokos@mail.ru</a><br>
             <a href="#"><img class="contact_img" src="Pictures/Icons/Vk.png" alt="vk"></a>
             <a href="#"><img class="contact_img" src="Pictures/Icons/Telegram.png" alt="telegram"></a>
-        <h2 id="underline">просто текст чтобы использовать подчеркивание</h2>
-        <h2 id="line-through">просто текст чтобы использовать зачеркивание</h2>
-        <h2 id="overline">просто текст чтобы использовать что-то еще</h2>
         <pre>    /\_____/\
     /  o   o  \
     ( ==  ^  == )

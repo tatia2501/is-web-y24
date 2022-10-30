@@ -24,14 +24,17 @@ header .logo_img{
     padding: 2px;
 }
 
-header input{
+header .search_line {
+    position: relative;
+}
+
+header .search_line input{
     height: 40px;
-    padding: 4px 10px;
     font-size: 20px;
     border-color: #910c6f;
 }
 
-header button{
+header .search_line button{
     height: 40px;
     width: 40px;
     border-color: #910c6f;
@@ -67,66 +70,52 @@ header #search_img{
     padding: 10px;
 }
 
-.kokos {
-    width: 48%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
-.kokos_2 {
-    height: 70%;
-}
-
-.kokos #kokos_img {
+.hello {
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    opacity: 0.9;
-}
-
-.kokos #kokos_text {
-    position: absolute;
-    top: 65%;
-    right: 5%;
-    left: 60%;
-    font-family: 'Nunito', sans-serif;
-    font-size: x-large;
-    padding: 8px;
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(250, 250, 250, 0.8);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .quotes {
+    position: relative;
     background: #fdecf9;
-    width: 48.5%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
     border: 6px dotted #910c6f;
 }
 
-.quotes .quote {
-    position: relative;
-    height: 70%;
-}
-
 .quotes .quotes_img{
-    width: 80%;
-    height: auto;
-    margin: 0;
-    padding: 10px 30px;
+    width: 95%;
+    margin: 15px;
 }
 
 .quotes .quote_text {
     position: absolute;
-    top: 35%;
+    top: 20%;
     left: 12%;
     right: 25%;
     font-family: 'Balsamiq Sans', cursive;
-    font-size: x-large;
     color: #000000;
+}
+
+.kokos {
+    position: relative;
+}
+
+.kokos #kokos_img {
+    width: 100%;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.kokos #kokos_text {
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(250, 250, 250, 0.8);
+    top: 60%;
+    right: 5%;
+    left: 5%;
 }
 
 main h1{
@@ -144,34 +133,31 @@ main h2 a{
     margin: 10px;
 }
 
-.pic_list {
+.sales {
+    width: 100%;
+    position: relative;
     display: flex;
-    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .sale {
     position: relative;
-    margin: 10px 80px;
-    padding: 0;
 }
 
 .sale .sale_text {
     position: absolute;
-    bottom: 20%;
-    left: 10%;
     font-family: 'Nunito', sans-serif;
-    font-size: x-large;
-    padding: 8px;
     color: rgba(0, 0, 0, 1);
     background-color: rgba(250, 250, 250, 0.5);
+    bottom: 20%;
+    left: 10%;
 }
 
 .sale .sales_img{
-    width: 95%;
-    height: auto;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    text-align: left;
+    /* align-items: center; */
     filter: drop-shadow(0 0 15px beige);
 }
 
@@ -268,7 +254,7 @@ main h2 a{
 }
 
 footer {
-    background: #f9bdff;
+    background: #fdecf9;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
@@ -294,19 +280,74 @@ footer .contact_img{
     display: inline-block;
 }
 
-footer #line-through {
-    text-decoration: line-through;
-    font-size: medium;
+@media screen and (max-width: 800px) {
+    .quotes {
+        width: 90%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 20px;
+    }
+    .kokos {
+        width: 90%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 17px;
+    }
+    .sale{
+        width: 90%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 20px;
+    }
 }
 
-footer #underline {
-    text-decoration: underline;
-    font-size: medium;
-    font-style: italic;
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 18px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 17px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 22px;
+    }
 }
 
-footer #overline {
-    text-decoration: overline dotted;
-    font-size: medium;
-    text-indent: 10px;
+@media screen and (min-width: 1200px) {
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 25px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 25px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 28px;
+    }
 }
