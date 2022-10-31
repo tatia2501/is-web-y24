@@ -2,7 +2,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
     background: #ffffff;
     height: 80px;
     width: 100%;
@@ -31,7 +30,6 @@ header input{
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    margin: 0;
     padding: 10px;
 }
 
@@ -197,9 +195,7 @@ table {
     font-size: 15px;
     margin: 3%;
     grid-template-columns:
-    minmax(60px, 1fr)
-    minmax(180px, 3fr)
-    minmax(120px, 2fr)
+    minmax(60px, 1fr) minmax(180px, 3fr) minmax(120px, 2fr)
 }
 
 thead, tbody, tr {
