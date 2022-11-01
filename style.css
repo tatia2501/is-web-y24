@@ -2,49 +2,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
     background: #ffffff;
     height: 80px;
-    margin: 0;
-    padding: 0;
     width: 100%;
-}
-
-header .icon_img{
-    height: 50px;
-    width: auto;
-    margin: 0;
-    padding: 2px;
-}
-
-header .logo_img{
-    height: 70px;
-    width: auto;
-    margin: 0;
-    padding: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 header input{
-    height: 40px;
-    padding: 4px 10px;
-    font-size: 20px;
     border-color: #910c6f;
-}
-
-header button{
-    height: 40px;
-    width: 40px;
-    border-color: #910c6f;
-    background: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-header #search_img{
-    height: 30px;
-    width: auto;
-    margin: 0;
-    padding: 0;
 }
 
 .nav_bar {
@@ -63,167 +30,131 @@ header #search_img{
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    margin: 0;
     padding: 10px;
 }
 
-.kokos {
-    width: 48%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
-.kokos_2 {
-    height: 70%;
+.quotes {
+    position: relative;
+    background: #fdecf9;
+    border: 6px dotted #910c6f;
+}
+
+.quotes .quotes_img{
+    width: 95%;
+    margin: 15px;
+}
+
+.quotes .quote_text {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    right: 25%;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #000000;
+}
+
+.kokos {
+    position: relative;
 }
 
 .kokos #kokos_img {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     opacity: 0.9;
+    text-align: left;
 }
 
 .kokos #kokos_text {
     position: absolute;
-    top: 65%;
-    right: 5%;
-    left: 60%;
-    font-family: 'Nunito', sans-serif;
-    font-size: x-large;
-    padding: 8px;
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(250, 250, 250, 0.8);
-}
-
-.quotes {
-    background: #fdecf9;
-    width: 48.5%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    border: 6px dotted #910c6f;
-}
-
-.quotes .quote {
-    position: relative;
-    height: 70%;
-}
-
-.quotes .quotes_img{
-    width: 80%;
-    height: auto;
-    margin: 0;
-    padding: 10px 30px;
-}
-
-.quotes .quote_text {
-    position: absolute;
-    top: 35%;
-    left: 12%;
-    right: 25%;
     font-family: 'Balsamiq Sans', cursive;
-    font-size: x-large;
-    color: #000000;
+    color: #ffffff;
+    -webkit-text-stroke: 0.7px #910c6f;
+    top: 72%;
+    bottom: 10%;
+    right: 5%;
+    left: 7%;
 }
 
 main h1{
     color: #000000;
     text-align: center;
-    font-size: xx-large;
     font-family: 'Balsamiq Sans', cursive;
 }
 
 main h2 a{
     color: #000000;
     font-family: 'Nunito', sans-serif;
-    font-size: x-large;
     text-decoration: none;
     margin: 10px;
 }
 
-.pic_list {
+.sales {
+    width: 100%;
     display: flex;
-    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .sale {
     position: relative;
-    margin: 10px 80px;
-    padding: 0;
 }
 
 .sale .sale_text {
     position: absolute;
-    bottom: 20%;
-    left: 10%;
     font-family: 'Nunito', sans-serif;
-    font-size: x-large;
-    padding: 8px;
     color: rgba(0, 0, 0, 1);
     background-color: rgba(250, 250, 250, 0.5);
+    bottom: 20%;
+    left: 10%;
 }
 
 .sale .sales_img{
-    width: 95%;
-    height: auto;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    text-align: left;
     filter: drop-shadow(0 0 15px beige);
 }
 
 .books_list {
+    width: 100%;
     display: flex;
-    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    height: 330px;
-    width: 500px;
-    margin: 20px;
+    margin: 15px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .container .imgBx {
-    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 330px;
-    width: 250px;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .container .details {
     display: flex;
     align-items: center;
-    height: 330px;
-    width: 250px;
+    width: 50%;
     box-sizing: border-box;
-    padding: 20px;
 }
 
 .container .details h1{
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
-    line-height: 1em;
     color: #000000;
     font-family: 'Nunito', sans-serif;
     text-align: left;
 }
 
 .container .details h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
     line-height: 1em;
     text-align: left;
     color: #696969;
@@ -231,28 +162,19 @@ main h2 a{
 }
 
 .container .details h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
     line-height: 1em;
     color: #a2a2a2;
-    float: left;
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
 }
 
 .container .details button {
     background: #000000;
     color: #ffffff;
     border: none;
-    outline: none;
-    padding: 2px 5px;
-    margin: 5px 10px;
-    font-size: 16px;
-    letter-spacing: 1px;
     font-weight: 600;
-    border-radius: 40px;
-    float: right;
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
+    padding: 2px 5px;
 }
 
 .bestsellers{
@@ -267,8 +189,38 @@ main h2 a{
     background: #f1ffe1;
 }
 
+table {
+    display: grid;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    margin: 3%;
+    grid-template-columns:
+    minmax(60px, 1fr) minmax(180px, 3fr) minmax(120px, 2fr)
+}
+
+thead, tbody, tr {
+    display: contents;
+}
+
+th {
+    background: #910c6f;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background: #fdecf9;
+}
+
 footer {
-    background: #f9bdff;
+    background: #fdecf9;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
@@ -280,33 +232,381 @@ footer h1 {
 footer .contact{
     font-size: medium;
     line-height: normal;
-    font-weight: 400;
     color: #000000;
-    text-transform: none;
     text-decoration: none;
 }
 
 footer .contact_img{
     height: 50px;
-    width: auto;
     margin: 3px;
     padding: 2px;
     display: inline-block;
 }
 
-footer #line-through {
-    text-decoration: line-through;
-    font-size: medium;
+@media screen and (max-width: 600px) {
+    header input {
+        height: 30px;
+        font-size: 15px;
+        width: 150px;
+    }
+    header .logo_img  {
+        height: 50px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons .menu_img {
+        height: 35px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons button{
+        border: none;
+        background: none;
+    }
+    header .points {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+    header .points a {
+        color: #910c6f;
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #fdecf9;
+    }
+    .menu_icons:hover .points {
+        display: block;
+    }
+    .menu_icons a:hover {
+        background-color: #fdecf9;
+    }
+    header .icons {
+        display: none;
+    }
+    .quotes {
+        width: 90%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 16px;
+    }
+    .kokos {
+        width: 90%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 15px;
+    }
+    main h1 {
+        font-size: 25px;
+    }
+    main h2 a {
+        font-size: 22px;
+    }
+    .sale{
+        width: 90%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 20px;
+    }
+    .container {
+        width: 90%;
+        height: 250px;
+    }
+    .container .details {
+        padding: 15px;
+    }
+    .container .details h1{
+        font-size: 18px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 16px;
+    }
+    .container .details button {
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
 }
 
-footer #underline {
-    text-decoration: underline;
-    font-size: medium;
-    font-style: italic;
+@media screen and (min-width: 600px)  and (max-width: 800px) {
+    header input {
+        height: 40px;
+        font-size: 20px;
+        width: 200px;
+    }
+    header .logo_img  {
+        height: 55px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 40px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 90%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 23px;
+    }
+    .kokos {
+        width: 90%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 20px;
+    }
+    main h1 {
+        font-size: 25px;
+    }
+    main h2 a {
+        font-size: 22px;
+    }
+    .sale{
+        width: 90%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 20px;
+    }
+    .container {
+        width: 70%;
+        height: 250px;
+    }
+    .container .details {
+        padding: 15px;
+    }
+    .container .details h1{
+        font-size: 18px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 16px;
+    }
+    .container .details button {
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
 }
 
-footer #overline {
-    text-decoration: overline dotted;
-    font-size: medium;
-    text-indent: 10px;
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    header input {
+        height: 40px;
+        font-size: 20px;
+        width: 250px;
+    }
+    header .logo_img  {
+        height: 60px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 40px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 18px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 17px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    main h2 a {
+        font-size: 25px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 22px;
+    }
+    .container {
+        width: 40%;
+        height: 250px;
+    }
+    .container .details {
+        padding: 15px;
+    }
+    .container .details h1{
+        font-size: 18px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 16px;
+    }
+    .container .details button {
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1800px) {
+    header input {
+        height: 50px;
+        font-size: 25px;
+        width: 400px;
+    }
+    header .logo_img  {
+        height: 70px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 50px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 25px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 25px;
+    }
+    main h1 {
+        font-size: 33px;
+    }
+    main h2 a {
+        font-size: 27px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 28px;
+    }
+    .container {
+        width: 30%;
+        height: 300px;
+    }
+    .container .details {
+        padding: 20px;
+    }
+    .container .details h1{
+        font-size: 22px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 20px;
+    }
+    .container .details button {
+        font-size: 15px;
+        letter-spacing: 1px;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    header input {
+        height: 50px;
+        font-size: 25px;
+        width: 600px;
+    }
+    header .logo_img  {
+        height: 70px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 50px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 30px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 30px;
+    }
+    main h1 {
+        font-size: 37px;
+    }
+    main h2 a {
+        font-size: 30px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 33px;
+    }
+    .container {
+        width: 30%;
+        height: 300px;
+    }
+    .container .details {
+        padding: 20px;
+    }
+    .container .details h1{
+        font-size: 22px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 20px;
+    }
+    .container .details button {
+        font-size: 15px;
+        letter-spacing: 1px;
+        border-radius: 40px;
+    }
 }
