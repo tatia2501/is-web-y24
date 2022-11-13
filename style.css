@@ -203,12 +203,14 @@ main h2 a{
     padding: 10px 15px;
 }
 
-.site_menu:hover {
-    display: block;
-}
-
 .site_menu a:hover {
     background-color: #fdecf9;
+}
+
+.current {
+    background-color: #fdecf9;
+    border-right: 2px dotted #910c6f;
+    border-left: 2px dotted #910c6f;
 }
 
 footer {

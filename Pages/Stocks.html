@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../Scripts/LoadTime.js"></script>
+    <script src="../Scripts/ActiveState.js"></script>
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
             <a href="../Pages/Stocks.html">Акции</a>
             <a href="../Pages/Faq.html">F.A.Q.</a>
         </nav>
-        <div class="site_menu">
+        <div class="site_menu" id="menu-act">
             <a href="../index.html">Главная</a>
             <a href="../Pages/Catalog.html">Каталог</a>
             <a href="../Pages/Account.html">Аккаунт</a>
@@ -49,6 +50,7 @@
             <a href="../Pages/Stocks.html">Акции</a>
             <a href="../Pages/Faq.html">F.A.Q.</a>
         </div>
+        <script type="text/javascript">shineLinks('menu-act');</script>
     </main>
     <footer>
         <h1>Как с нами связаться</h1>
