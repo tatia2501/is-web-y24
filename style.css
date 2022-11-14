@@ -194,14 +194,14 @@ main h2 a{
     position: sticky;
     bottom: 0;
     z-index: 1;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 
 .site_menu a {
     color: #910c6f;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    padding: 10px 15px;
+    padding: 4px 15px;
 }
 
 .site_menu a:hover {
