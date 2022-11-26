@@ -238,6 +238,64 @@ footer .contact_img{
     display: inline-block;
 }
 
+.wishlist {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wishlist_text {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 25px;
+    color: #000000;
+    margin: 20px;
+}
+
+.wishlist_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fdecf9;
+    border: 2px dotted #910c6f;
+    border-radius: 10px;
+    width: 30%;
+    height: 100px;
+}
+
+.wishlist_input {
+    border-color: #fdecf9;
+    background: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+    width: 300px;
+}
+
+.wishlist_button {
+    border: 1px solid #910c6f;
+    background: #fdecf9;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+}
+
+.wishlist_sublists {
+    border: 1px solid #910c6f;
+    background: #910c6f;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+}
+
+.wishlist_list {
+    font-family: 'Nunito', sans-serif;
+}
+
 @media screen and (max-width: 600px) {
     header input {
         height: 30px;
