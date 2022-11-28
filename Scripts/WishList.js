@@ -6,7 +6,7 @@ document.querySelector("form").addEventListener("submit", e => {
 });
 
 function showBook(list, book, title) {
-    const li = document.createElement("li");
+    let li = document.createElement("li");
     li.innerHTML = `<input type="checkbox" onclick="bookPurchased(this)" class="wishlist_check" ${book.purchased ? 'checked' : ''} >
      <div class="wishlist_book ${book.purchased ? 'purchased' : ''}">${title}</div>
      <i onclick="removeBook(this)">удалить</i>`;
@@ -17,7 +17,7 @@ function loadBooks() {
     if (localStorage.getItem("books") == null) return;
     let books = Array.from(JSON.parse(localStorage.getItem("books")));
 
-    const list = document.querySelector("ul");
+    let list = document.querySelector("ul");
     books.forEach(book => {
         let title = book.book;
         showBook(list, book, title)
@@ -25,8 +25,8 @@ function loadBooks() {
 }
 
 function addBook() {
-    const book = document.querySelector("form input");
-    const list = document.querySelector("ul");
+    let book = document.querySelector("form input");
+    let list = document.querySelector("ul");
 
     localStorage.setItem("books", JSON.stringify([...JSON.parse(localStorage.getItem("books") || "[]"), { book: book.value, purchased: false }]));
 
@@ -39,7 +39,7 @@ function addBook() {
 function bookPurchased(event) {
     let books = Array.from(JSON.parse(localStorage.getItem("books")));
     books.forEach(book => {
-        if (book.book === event.nextElementSibling.textContent) {
+        if (book.book === event.parentNode.children[1].textContent) {
             book.purchased = !book.purchased;
         }
     });
