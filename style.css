@@ -281,13 +281,13 @@ footer .contact_img{
     height: 40px;
 }
 
-.wishlist_list {
+#wishlist_list {
     width: 500px;
     list-style: none;
     font-family: 'Nunito', sans-serif;
 }
 
-.wishlist_list li {
+#wishlist_list li {
     padding: 10px;
     background-color: #fdecf9;
     border: 1px solid #910c6f;
@@ -303,7 +303,13 @@ footer .contact_img{
     -webkit-appearance: none;
 }
 
-.wishlist_check:checked{
+.wishlist_checked {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #910c6f;
+    cursor: pointer;
+    -webkit-appearance: none;
     background-color: #910c6f;
 }
 
@@ -314,7 +320,7 @@ footer .contact_img{
     padding: 0 10px;
 }
 
-.wishlist_list li i {
+.delete_book {
     display: inline-block;
     padding: 10px 0;
     float: right;
@@ -322,6 +328,10 @@ footer .contact_img{
 }
 
 .purchased {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
     text-decoration: line-through;
 }
 

@@ -44,7 +44,15 @@
       <input class="wishlist_input" type="text" value="" placeholder="Введите название книги">
       <button type="submit" class="wishlist_button">Добавить</button>
     </form>
-    <ul class="wishlist_list"></ul>
+    <ul id="wishlist_list">
+      <template id="template">
+        <li class="book_block">
+          <input type="checkbox" class="wishlist_check" id="wishlist_check">
+          <div class="wishlist_book"></div>
+          <i class="delete_book">удалить</i>
+        </li>
+      </template>
+    </ul>
   </section>
     <script src="../Scripts/WishList.js"></script>
   <div class="site_menu" id="menu-act">

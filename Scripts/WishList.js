@@ -1,16 +1,33 @@
 window.onload = loadBooks;
+const dataContainer = document.getElementById("wishlist_list");
+const template = document.getElementById("template");
 
 document.querySelector("form").addEventListener("submit", e => {
     e.preventDefault();
     addBook();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.wishlist_check')) {
+            bookPurchased(e.target.closest('.wishlist_check'));
+        } else if (e.target.closest('.wishlist_checked')) {
+            bookPurchased(e.target.closest('.wishlist_checked'));
+        }
+        if (e.target.closest('.delete_book')) {
+            removeBook(e.target.closest('.delete_book'));
+        }
+    });
+});
+
 function showBook(list, book, title) {
-    let li = document.createElement("li");
-    li.innerHTML = `<input type="checkbox" onclick="bookPurchased(this)" class="wishlist_check" ${book.purchased ? 'checked' : ''} >
-     <div class="wishlist_book ${book.purchased ? 'purchased' : ''}">${title}</div>
-     <i onclick="removeBook(this)">удалить</i>`;
-    list.insertBefore(li, list.children[0]);
+    const item = template.content.cloneNode(true);
+    let input = item.querySelectorAll("input");
+    input[0].className = book.purchased ? 'wishlist_checked' : 'wishlist_check';
+    let div = item.querySelectorAll("div");
+    div[0].className = book.purchased ? 'purchased' : 'wishlist_book';
+    div[0].textContent = title;
+    dataContainer.appendChild(item);
 }
 
 function loadBooks() {
@@ -58,13 +75,16 @@ function addBook() {
 
 function bookPurchased(event) {
     let books = Array.from(JSON.parse(localStorage.getItem("books")));
+    let isPurchased = true;
     books.forEach(book => {
         if (book.book === event.parentNode.children[1].textContent) {
             book.purchased = !book.purchased;
+            isPurchased = book.purchased;
         }
     });
     localStorage.setItem("books", JSON.stringify(books));
-    event.nextElementSibling.classList.toggle("purchased");
+    event.nextElementSibling.className = isPurchased ? 'purchased' : 'wishlist_book';
+    event.className = isPurchased ? 'wishlist_checked' : 'wishlist_check';
 }
 
 function removeBook(event) {
