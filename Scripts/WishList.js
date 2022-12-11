@@ -26,7 +26,27 @@ function loadBooks() {
 
 function addBook() {
     let book = document.querySelector("form input");
+    book.value = book.value.trim();
     let list = document.querySelector("ul");
+
+    let books = Array.from(JSON.parse(localStorage.getItem("books")));
+
+    let isBookInList = false;
+    books.forEach(cur_book => {
+        if (cur_book.book === book.value) {
+            alert("Книга уже есть в списке");
+            isBookInList = true;
+        }
+    });
+
+    if (isBookInList) {
+        return false;
+    }
+
+    if (book.value === "") {
+        alert("Напишите название книги");
+        return false;
+    }
 
     localStorage.setItem("books", JSON.stringify([...JSON.parse(localStorage.getItem("books") || "[]"), { book: book.value, purchased: false }]));
 
