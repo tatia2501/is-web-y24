@@ -1,4 +1,4 @@
-const getPhotos = async () => {
+const getUsers = async () => {
     return await fetch(`https://jsonplaceholder.typicode.com/users`)
         .then(response => response.json());
 }
@@ -18,7 +18,7 @@ const loadUsers = async () => {
 
     const userNum = Math.floor(Math.random() * 10);
     try {
-        const data = (await getPhotos()).slice(userNum, userNum + 1);
+        const data = (await getUsers()).slice(userNum, userNum + 1);
         container.innerHTML = '';
         for (const item of data) {
             const user = template_users.content.cloneNode(true);
