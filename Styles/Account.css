@@ -1,0 +1,22 @@
+#user_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+}
+
+#user_info .user .name {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 22px;
+}
+
+#user_info .user .info {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+#user_info p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+}
