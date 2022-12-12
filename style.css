@@ -238,6 +238,103 @@ footer .contact_img{
     display: inline-block;
 }
 
+.wishlist {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wishlist_text {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 25px;
+    color: #000000;
+    margin: 20px;
+}
+
+.wishlist_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fdecf9;
+    border: 2px dotted #910c6f;
+    border-radius: 10px;
+    width: 600px;
+    height: 100px;
+}
+
+.wishlist_input {
+    border-color: #fdecf9;
+    background: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+    width: 300px;
+}
+
+.wishlist_button {
+    border: 1px solid #910c6f;
+    background: #fdecf9;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+}
+
+#wishlist_list {
+    width: 500px;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+#wishlist_list li {
+    padding: 10px;
+    background-color: #fdecf9;
+    border: 1px solid #910c6f;
+}
+
+.wishlist_check{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #910c6f;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.wishlist_checked {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #910c6f;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-color: #910c6f;
+}
+
+.wishlist_book {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.delete_book {
+    display: inline-block;
+    padding: 10px 0;
+    float: right;
+    cursor: pointer;
+}
+
+.purchased {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+    text-decoration: line-through;
+}
+
 @media screen and (max-width: 600px) {
     header input {
         height: 30px;
@@ -327,6 +424,12 @@ footer .contact_img{
         font-size: 12px;
         letter-spacing: 1px;
         border-radius: 30px;
+    }
+    .wishlist_form {
+        width: 390px;
+    }
+    .wishlist_list {
+        width: 350px;
     }
 }
 
