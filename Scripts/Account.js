@@ -12,9 +12,9 @@ function sleep(ms) {
 }
 
 const loadUsers = async () => {
-    container.innerHTML = '<iframe src="https://gifer.com/embed/L6MI" width=200 height=200></iframe>';
+    container.innerHTML = '<img src="../Pictures/Gif/LoadCat.gif" width=250 height=200 alt="mask">';
 
-    await sleep(4000);
+    await sleep(3000);
 
     const userNum = Math.floor(Math.random() * 10);
     try {
@@ -34,7 +34,7 @@ const loadUsers = async () => {
         while (container.firstChild) {
             container.removeChild(container.firstChild);
         }
-        container.innerHTML = `<iframe src="https://gifer.com/embed/82cP" width=200 height=300></iframe>`;
+        container.innerHTML = `<img src="../Pictures/Gif/ErrorCat.gif" width=200 height=300 alt="mask">`;
         const error = template_error.content.cloneNode(true);
         container.appendChild(error);
     }
