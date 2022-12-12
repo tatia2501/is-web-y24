@@ -9,40 +9,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Scripts/LoadTime.js"></script>
 </head>
 <body>
     <header>
-        <img class="logo_img" src="Pictures/Icons/Logo.png" alt="logo">
+        <a href=""><img class="logo_img" src="Pictures/Icons/Logo.png" alt="logo"></a>
         <div class="menu_icons">
             <button><img class="menu_img" src="Pictures/Icons/Down.png" alt="menu"></button>
             <div class="points">
-                <a href="#">Аккаунт</a>
-                <a href="#">Избранное</a>
-                <a href="#">Корзина</a>
-                <a href="#">Сообщения</a>
+                <a href="Pages/Account.html">Аккаунт</a>
+                <a href="Pages/Favourites.html">Избранное</a>
+                <a href="Pages/Basket.html">Корзина</a>
+                <a href="Pages/Mail.html">Сообщения</a>
             </div>
         </div>
         <input type="text" value="" placeholder="поиск">
         <div class="icons">
-            <a href="#"><img class="icon_img" src="Pictures/Icons/Men.png" alt="account"></a>
-            <a href="#"><img class="icon_img" src="Pictures/Icons/Heart.png" alt="favourites"></a>
-            <a href="#"><img class="icon_img" src="Pictures/Icons/Basket.png" alt="basket"></a>
-            <a href="#"><img class="icon_img" src="Pictures/Icons/Mail.png" alt="mail"></a>
+            <a href="Pages/Account.html"><img class="icon_img" src="Pictures/Icons/Men.png" alt="account"></a>
+            <a href="Pages/Favourites.html"><img class="icon_img" src="Pictures/Icons/Heart.png" alt="favourites"></a>
+            <a href="Pages/Basket.html"><img class="icon_img" src="Pictures/Icons/Basket.png" alt="basket"></a>
+            <a href="Pages/Mail.html"><img class="icon_img" src="Pictures/Icons/Mail.png" alt="mail"></a>
         </div>
     </header>
     <main>
         <nav class="nav_bar">
-            <a href="#">Каталог</a>
-            <a href="#">Доставка</a>
-            <a href="#">Акции</a>
-            <a href="#">F.A.Q.</a>
+            <a href="Pages/Catalog.html">Каталог</a>
+            <a href="Pages/Delivery.html">Доставка</a>
+            <a href="Pages/Stocks.html">Акции</a>
+            <a href="Pages/Faq.html">F.A.Q.</a>
         </nav>
         <section class="welcome">
             <div class="quotes">
                 <img class="quotes_img" src="Pictures/Dialog.png" alt="Цитата 1">
                 <div class="quote_text">
-                    <q>Выбирать книги для своего и чужого чтения — не только наука, но и искусство.</q><br>
-                    <cite>Николай Рубакин</cite>
+                    <q>Если вы не любите читать, значит, вы не нашли нужную книгу</q><br>
+                    <cite>Джоан Роулинг</cite>
                 </div>
             </div>
             <div class="kokos">
@@ -53,20 +54,20 @@
         <h1>Акции</h1>
         <section class="sales">
             <div class="sale">
-                <a href="#"><img class="sales_img" src="Pictures/Sales/Blue 1.jpg" alt="Акция 1"></a>
+                <a href="Pages/Stocks.html"><img class="sales_img" src="Pictures/Sales/Blue 1.jpg" alt="Акция 1"></a>
                 <div class="sale_text">Скидка 20% на чек от 1000р</div>
             </div>
             <div class="sale">
-                <a href="#"><img class="sales_img" src="Pictures/Sales/Green 1.jpg" alt="Акция 2"></a>
+                <a href="Pages/Stocks.html"><img class="sales_img" src="Pictures/Sales/Green 1.jpg" alt="Акция 2"></a>
                 <div class="sale_text">Скидка 15% при оплате на сайте</div>
             </div>
         </section>
         <h1>Подборки</h1>
         <section class="bestsellers">
-            <h2><a href="#">Бестселлеры</a></h2>
+            <h2><a href="Pages/Catalog.html">Бестселлеры</a></h2>
             <div class="books_list">
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/Book 1.jpg" alt="bestseller"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/Book 1.jpg" alt="bestseller"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Дьякон Кинг-Конг<br></h1>
@@ -77,7 +78,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/Book 2.jpg" alt="bestseller"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/Book 2.jpg" alt="bestseller"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Друзья - больше, чем просто сериал<br></h1>
@@ -88,7 +89,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/Book 3.jpg" alt="bestseller"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/Book 3.jpg" alt="bestseller"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Мара и Морок<br></h1>
@@ -101,10 +102,10 @@
             </div>
         </section>
         <section class="news">
-            <h2><a href="#">Новинки</a></h2>
+            <h2><a href="Pages/Catalog.html">Новинки</a></h2>
             <div class="books_list">
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/New 1.png" alt="kids"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/New 1.png" alt="kids"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Девушка в голубом пальто<br></h1>
@@ -115,7 +116,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/New 2.jpg" alt="kids"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/New 2.jpg" alt="kids"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Лучезарная. Узри свое будущее<br></h1>
@@ -126,7 +127,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/New 3.png" alt="kids"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/New 3.png" alt="kids"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Сага об угре<br></h1>
@@ -139,10 +140,10 @@
             </div>
         </section>
         <section class="kids">
-            <h2><a href="#">Для детей</a></h2>
+            <h2><a href="Pages/Catalog.html">Для детей</a></h2>
             <div class="books_list">
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/Kids 1.jpg" alt="kids"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/Kids 1.jpg" alt="kids"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Молния. История о Мэри Эннинг<br></h1>
@@ -153,7 +154,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/Kids 2.png" alt="kids"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/Kids 2.png" alt="kids"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Первая прогулка богдыхана<br></h1>
@@ -164,7 +165,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <a href="#"><img class="imgBx" src="Pictures/Books/Kids 3.png" alt="kids"></a>
+                    <a href="Pages/Catalog.html"><img class="imgBx" src="Pictures/Books/Kids 3.png" alt="kids"></a>
                     <div class="details">
                         <div class="content">
                             <h1>Сказки для девочек<br><br></h1>
@@ -175,44 +176,19 @@
                 </div>
             </div>
         </section>
-        <h1>Литературные жанры</h1>
-        <section class="table_genres">
-            <table>
-                <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Особенности</th>
-                    <th>Примеры</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Новелла</td>
-                    <td>Краткость, острый сюжет, отсутствие изображений чувств и характеров, неожиданная развязка.</td>
-                    <td>Л. Н. Андреев «Чемоданов»</td>
-                </tr>
-                <tr>
-                    <td>Роман-эпопея</td>
-                    <td>Изображение народной жизни в переломные моменты истории.</td>
-                    <td>Л. Н. Толстой «Война и мир», М. А. Шолохов «Тихий Дон»</td>
-                </tr>
-                <tr>
-                    <td>Элегия</td>
-                    <td>Грустное стихотворение, выражает размышления лирического героя на философские темы или интимные темы.</td>
-                    <td>В. А. Жуковский «Море», М. Ю. Лермонтов «Элегия»</td>
-                </tr>
-                <tr>
-                    <td>Эпиграмма</td>
-                    <td>Стихотворение с сатирическим содержанием, высмеивание явлений и лиц.</td>
-                    <td>В. Я. Брюсов «Константину Бальмонту», И. С. Тургенев «На А. В. Дружинина»</td>
-                </tr>
-                <tr>
-                    <td>Очерк</td>
-                    <td>Отсутствие проблемы, изображение видов природы/городов, могут также описываться реальные люди и реальные события.</td>
-                    <td>Н. А. Некрасов «Физиология Петербурга»</td>
-                </tr>
-            </table>
-        </section>
+        <div class="site_menu" id="menu-act">
+            <script src="Scripts/ActiveState.js"></script>
+            <a href="">Главная</a>
+            <a href="Pages/Catalog.html">Каталог</a>
+            <a href="Pages/Account.html">Аккаунт</a>
+            <a href="Pages/Favourites.html">Избранное</a>
+            <a href="Pages/Basket.html">Корзина</a>
+            <a href="Pages/Mail.html">Сообщения</a>
+            <a href="Pages/Delivery.html">Доставка</a>
+            <a href="Pages/Stocks.html">Акции</a>
+            <a href="Pages/Faq.html">F.A.Q.</a>
+        </div>
+        <script type="text/javascript">shineLinks('menu-act');</script>
     </main>
     <footer>
         <h1>Как с нами связаться</h1>
@@ -220,6 +196,7 @@
             <a class="contact" href="mailto:kokos@mail.ru">kokos@mail.ru</a><br>
             <a href="#"><img class="contact_img" src="Pictures/Icons/Vk.png" alt="vk"></a>
             <a href="#"><img class="contact_img" src="Pictures/Icons/Telegram.png" alt="telegram"></a>
+        <p id="timeinfo"></p>
         <pre>/\_____/\
 /  o   o  \
 ( ==  ^  == )
