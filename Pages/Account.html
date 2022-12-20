@@ -5,6 +5,7 @@
     <title>Личный кабинет</title>
     <meta name="keywords" content="Интернет-магазин">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Styles/Account.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -38,6 +39,21 @@
             <a href="../Pages/Stocks.html">Акции</a>
             <a href="../Pages/Faq.html">F.A.Q.</a>
         </nav>
+        <div id="user_info">
+            <template id="template">
+                <div class="user">
+                    <p class="name">${item.name}</p>
+                    <p class="info">${item.username}</p>
+                    <p class="info">${item.email}</p>
+                    <p class="info">${item.address.street}</p>
+                    <p class="info">${item.phone}</p>
+                </div>
+            </template>
+            <template id="error">
+                <p>Что-то пошло не так...</p>
+            </template>
+        </div>
+        <script type="text/javascript" src="../Scripts/Account.js"></script>
         <div class="site_menu" id="menu-act">
             <script src="../Scripts/ActiveState.js"></script>
             <a href="../">Главная</a>
